@@ -108,7 +108,7 @@ params:
     button:
       enable: true
       name: "Currículo"
-      url: "/images/cv_lineu.pdf"
+      url: "https://github.com/lineu96/lineu96.github.io/raw/main/static/cv_lineu.pdf"
       download: true 
 #    content: |-
 #      <center><img src="/images/defesa.jpg" alt="Drawing" style="width: 550px;"/><br><br><br></center>
