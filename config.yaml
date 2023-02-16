@@ -135,21 +135,17 @@ params:
     image: "/images/me2.jpg"
     content: |-
       
-      Sou Bacharel em Estatística e Mestre em Informática pela UFPR.
-
-      Minha principal área de atuação é em Estatística e métodos estatísticos aplicados em Ciência de Dados, com ênfase em modelos de regressão.
-
-      Durante o mestrado fui bolsista CAPES e fiz parte do grupo de pesquisa de Data Science & Big Data. Minha dissertação foi sobre testes de hipóteses para modelos de regressão com múltiplas respostas não gaussianas, tema que trabalho desde a graduação.
-
+      Sou Bacharel em Estatística, Mestre em Informática e atualmente professor substituto no Departamento de Estatística da Universidade Federal do Paraná.
+      
+      Minha principal área de atuação é em Estatística e métodos estatísticos aplicados em Ciência de dados, com ênfase em modelos de regressão.
+      
+      Durante o mestrado fui bolsista CAPES, fiz parte do grupo de pesquisa de Data Science & Big Data e trabalhei com métodos estatísticos aplicados em Ciência de Dados. Minha dissertação foi sobre testes de hipóteses para modelos de regressão com múltiplas respostas.
+      
       A principal ferramenta que domino é a linguagem R, uma linguagem de programação destinada principalmente para análise de dados, computação estatística e criação de gráficos.
-
-      Durante a graduação participei de diversas atividades acadêmicas de ensino, pesquisa e extensão como membro do PET Estatística UFPR.
       
-      Tenho experiência no setor público e privado, tendo estagiado em áreas de análise de dados no Tribunal de Justiça do Paraná e no Banco Bradesco. 
+      Meus principais interesses são Ciência de dados, Estatística, Visualização de dados, Modelos de regressão, GLM, GAMLSS, McGLM, Ensino de Estatística e Ciência de Dados, R e pesquisa.
       
-      Em minhas últimas experiências atuei como pesquisador, professor e consultor. 
-
-      Atualmente sou professor conteudista na Ômega - Escola de Data Science, onde produzo e reviso materiais como livros, slides, avaliações, posts, etc. Em minha atual função são minhas atribuições gerenciar a plataforma de ensino online (quando necessário), auxiliar na criação de cursos síncronos na área de Ciência de Dados e também na adaptação de cursos presenciais para autoinstrucionais.
+      Tenho experiência no setor público e privado. Em minhas últimas experiências atuei como pesquisador, professor e consultor.
       
       <center><img src="/images/defesa.jpg" alt="Drawing" style="width: 550px;"/><br><br><br></center>
       
@@ -176,11 +172,27 @@ params:
     enable: true
     title: "Experiência"
     items:
-    
+
+      - job: "Professor substituto"
+        company: "DEST/UFPR"
+        companyUrl: "http://www.est.ufpr.br/"
+        date: "Janeiro 2023 - Atual"
+        #featuredLink:
+          #enable: true
+          #name: "View the project"
+          #url: "https://example.com"
+        info:
+          enable: true
+          content: Professor
+        content: |
+          Professor substituto da carreira de magistério superior. Lotado no Setor de Ciências Exatas, Departamento de Estatística, Laboratório de Estatística e Geoinformação, Universidade Federal do Paraná.
+          
+          <center><img src="/images/ufpr.png" alt="Drawing" style="width: 200px;"/><br><br><br></center>
+          
       - job: "Professor conteudista"
         company: "Ômega DS"
         companyUrl: "https://omegadatascience.com.br/"
-        date: "Outubro 2021 - Atual"
+        date: "Outubro 2021 - Janeiro 2023"
         #featuredLink:
           #enable: true
           #name: "View the project"
