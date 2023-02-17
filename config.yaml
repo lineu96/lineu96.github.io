@@ -135,6 +135,8 @@ params:
     image: "/images/me2.jpg"
     content: |-
       
+      teste
+      
       Sou Bacharel em Estatística, Mestre em Informática e atualmente professor substituto no Departamento de Estatística da Universidade Federal do Paraná.
       
       Minha principal área de atuação é em Estatística e métodos estatísticos aplicados em Ciência de dados, com ênfase em modelos de regressão.
