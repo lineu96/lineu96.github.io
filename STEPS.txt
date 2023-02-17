@@ -82,3 +82,12 @@ Com isso, a página deve ser publicada no endereço {username}.github.io
 
 ---
 
+Caso haja necessidade de instalar em outro pc
+
+ - Baixar mesma versão do Hugo
+ 
+ - Executar:
+    git submodule init
+    git submodule update
+ 
+---
