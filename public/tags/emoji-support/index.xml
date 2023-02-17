@@ -6,7 +6,11 @@
     <description>Recent content in Emoji support on Lineu Alberto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 03 Apr 2021 22:53:58 +0530</lastBuildDate><atom:link href="https://lineu96.github.io/tags/emoji-support/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Apr 2021 22:53:58 +0530</lastBuildDate>
+    
+	<atom:link href="https://lineu96.github.io/tags/emoji-support/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Emoji Support</title>
       <link>https://lineu96.github.io/blogs/emoji-support/</link>

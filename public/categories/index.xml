@@ -5,6 +5,10 @@
     <link>https://lineu96.github.io/categories/</link>
     <description>Recent content in Categories on Lineu Alberto</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language><atom:link href="https://lineu96.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>pt-br</language>
+    
+	<atom:link href="https://lineu96.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>
