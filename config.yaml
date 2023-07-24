@@ -135,16 +135,16 @@ params:
     image: "/images/me2.jpg"
     content: |-
       
-      Sou Bacharel em Estatística, Mestre em Informática e atualmente professor substituto no Departamento de Estatística da Universidade Federal do Paraná.
-      
+      Sou Bacharel em Estatística, Mestre em Informática e atualmente professor substituto no Departamento de Estatística da Universidade Federal do Paraná e membro do Laboratório de Estatística e Geoinformação da Universidade Federal do Paraná.
+
       Minha principal área de atuação é em Estatística e métodos estatísticos aplicados em Ciência de dados, com ênfase em modelos de regressão.
-      
+
       Durante o mestrado fui bolsista CAPES, fiz parte do grupo de pesquisa de Data Science & Big Data e trabalhei com métodos estatísticos aplicados em Ciência de Dados. Minha dissertação foi sobre testes de hipóteses para modelos de regressão com múltiplas respostas.
-      
+
       A principal ferramenta que domino é a linguagem R, uma linguagem de programação destinada principalmente para análise de dados, computação estatística e criação de gráficos.
-      
+
       Meus principais interesses são Ciência de dados, Estatística, Visualização de dados, Modelos de regressão, GLM, GAMLSS, McGLM, Ensino de Estatística e Ciência de Dados, R e pesquisa.
-      
+
       Tenho experiência no setor público e privado. Em minhas últimas experiências atuei como pesquisador, professor e consultor.
       
       <center><img src="/images/defesa.jpg" alt="Drawing" style="width: 550px;"/><br><br><br></center>
@@ -385,7 +385,7 @@ params:
           
           <b>TRABALHO DE CONCLUSÃO DE CURSO</b>: Veloso, J. C., & <u>de Freitas, L. A. C.</u> <a href="https://www.dropbox.com/s/hc1baae2egdblqo/tccJhenifereLineu.pdf?dl=0"> Análise de Variância Multivariada para Dados Não Gaussianos via Teste Wald</a>.
 
-      - title: "Aulas, palestras, apresentações"
+      - title: "Aulas, palestras e apresentações transmitidas"
         #school:
         #  name: "Universidade Federal do Paraná"
         #  url: "http://www.coordest.ufpr.br/"
@@ -393,21 +393,45 @@ params:
         #GPA: "3.9 out of 5.0"
         content: |-
           
-          <b>Defesa</b>: <a href="https://youtu.be/sxu-rD72O88"> Defesa de dissertação PPGInf UFPR</a>
+          <b>Aula (01/06/2023)</b>: <a href="https://youtu.be/1EAzjaefcHg?si=MjIvVpQ_pCWCDWoG"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2023: Regressão linear com R. </a>
           
-          <b>Aula</b>: <a href="https://www.youtube.com/watch?v=GyjUsS9KvW8"> Aula 1, parte 2 - Métodos Estatísticos em Pesquisa Científica PRPPG 2022</a>
+          <b>Palestra (29/05/2023)</b>: <a href="https://www.youtube.com/live/xwAVCAzidHo?si=q8cQgHbkO_Tl4trU"> Dia do Estatístico 2023.</a>
           
-          <b>Mesa Redonda</b>: <a href="https://youtu.be/fMJeVjKs3sg"> Semana Acadêmica de Estatística 2021 - Mesa Redonda</a>
+          <b>Aula (24/05/2023)</b>: <a href="https://youtu.be/trTWjo0rqtc?si=w09yvwclk_4OWsLE"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2023: Análise exploratória + testes de hipóteses. </a>          
+
+          <b>Aula (11/05/2023)</b>: <a href="https://youtu.be/HMclMkfZG6M?si=_DkCTbTwtslBSJtw"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2023: Ilustração de distribuição amostral e testes de hipóteses usando R. </a>          
+
+          <b>Aula (04/05/2023)</b>: <a href="https://youtu.be/35A-Y5LyMi8?si=ingAIg6hWTvAfuaG"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2023: Distribuições de probabilidade no R. </a>
+
+          <b>Aula (27/04/2023)</b>: <a href="https://youtu.be/KHUKZYpWOSY?si=gjmu1gqvLRuk5gcl"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2023: R como calculadora para alguns problemas de probabilidade. </a>
+
+          <b>Aula (19/04/2023)</b>: <a href="https://youtu.be/fqbw3yEKa_o?si=uZi1PdiFX8iAMDti"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2023: Tabulação, importação e exportação de dados. </a>
+
+          <b>Aula (13/04/2023)</b>: <a href="https://youtu.be/hYEvI2kA6jk?si=gVFUOWtcrC1y3DYP"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2023: Análise exploratória usando R. </a>
+
+          <b>Aula (13/04/2023)</b>: <a href="https://youtu.be/gocvsMViml8?si=Qbe-Zf0XUgBx1auZ"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2023: Primeiros passos com R. </a>
+
+          <b>Palestra (01/04/2023)</b>: <a href="https://www.youtube.com/live/rrooiT_3SqA?si=VSmU5Zdk2K0wQzoL"> Um estudo de caso de análise de comportamento animal usando GAMLSS.</a>
+
+          <b>Aula (29/03/2023)</b>: <a href="https://youtu.be/Kl0ruPUNbMg?si=dcU9Flypob_QeOsm"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2023: Introdução ao R. </a>
+ 
+          <b>Aula (23/03/2023)</b>: <a href="https://youtu.be/JI-YRLMv37s?si=5gy_UahnnMg9IkFM"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2023: conhecendo a turma e análise descritiva, análise de um questionário. </a>
+
+          <b>Defesa (13/08/2022)</b>: <a href="https://youtu.be/sxu-rD72O88"> Dissertação de mestrado: Testes de hipóteses para avaliação de parâmetros de regressão e dispersão em modelos multivariados de covariância linear generalizada.</a>
           
-          <b>Apresentação</b>: <a href="https://youtu.be/NOay96Qj96k"> Semana acadêmica do curso de Estatística 2021</a>
+          <b>Aula (24/03/2022)</b>: <a href="https://www.youtube.com/watch?v=GyjUsS9KvW8"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2022: conhecendo a turma e análise descritiva, análise de um questionário. </a>
           
-          <b>Defesa</b>: <a href="https://youtu.be/lCUU2AJXGoU"> Exame de qualificação PPGInf UFPR</a>
+          <b>Mesa Redonda (14/09/2021)</b>: <a href="https://youtu.be/fMJeVjKs3sg"> Semana Acadêmica de Estatística 2021: Reforma Curricular</a>
           
-          <b>Aula</b>: <a href="https://youtu.be/54ZPq835RxA"> Aula 1, parte 2 - Métodos Estatísticos em Pesquisa Científica PRPPG 2021</a>
+          <b>Apresentação (12/09/2021)</b>: <a href="https://youtu.be/NOay96Qj96k"> Semana acadêmica de Estatística 2021: Testes de hipóteses em modelos multivariados de covariância linear generalizada.</a>
           
-          <b>Palestra</b>: <a href="https://youtu.be/XqJD4BEKHnQ"> Aula Inaugural - A importância da Estatística na atualidade e seu mercado de trabalho.</a>
+          <b>Defesa (12/09/2021)</b>: <a href="https://youtu.be/lCUU2AJXGoU"> Exame de qualificação: Testes de hipóteses em modelos multivariados de covariância linear generalizada.</a>
           
-          <b>Palestra</b>: <a href="https://youtu.be/FSJFQzRH2j8"> PET Convida</a>
+          <b>Aula (25/05/2021)</b>: <a href="https://youtu.be/54ZPq835RxA"> Disciplina de pós graduação Métodos Estatísticos em Pesquisa Científica (MEPC) 2021: conhecendo a turma e análise descritiva, análise de um questionário</a>
+          
+          <b>Palestra (24/05/2021)</b>: <a href="https://youtu.be/XqJD4BEKHnQ"> Aula Inaugural: Minha trajetória na UFPR.</a>
+          
+          <b>Palestra (20/11/2020)</b>: <a href="https://youtu.be/FSJFQzRH2j8"> PET Convida: Testes de hipóteses em modelos multivariados de covariância linear generalizada.</a>
           
 # Achievements
   achievements:
