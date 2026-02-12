@@ -12,183 +12,208 @@
   <link href="css/style-v3.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
 
-  <style>
-    :root {
-      --primary: #002d5b;
-      --accent: #00c6ff;
-      --soft-bg: #f4f7f6;
-      --glass: rgba(255, 255, 255, 0.8);
-    }
+<style>
+  :root {
+    --primary: #1a3a5f;
+    --accent: #00c6ff;
+    --soft-bg: #f4f7f6;
+    --glass: rgba(255, 255, 255, 0.8);
+  }
 
-    body {
-      background-color: var(--soft-bg);
-      font-family: 'Poppins', sans-serif;
-      color: #444;
-    }
+  /* --- CORREÇÕES DE EMERGÊNCIA (HEADER E MENU) --- */
+  .header_section {
+    background-color: #1a3a5f !important;
+    display: block !important;
+  }
 
-    .heading_container h2 {
-      font-weight: 700;
-      color: var(--primary);
-      text-transform: none;
-      margin-bottom: 40px;
-      position: relative;
-    }
+  /* Força as barrinhas do menu a ficarem brancas e visíveis */
+  .navbar-toggler span {
+    background-color: #ffffff !important;
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+  }
 
-    .heading_container h2::after {
-      content: "";
-      width: 60px;
-      height: 4px;
-      background: var(--accent);
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      border-radius: 2px;
+  /* Garante que o menu suspenso no mobile tenha fundo sólido */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background-color: #1a3a5f !important;
+      padding: 15px;
+      border-radius: 10px;
+      z-index: 9999;
     }
-
-    /* --- ESTILO ESCOLARIDADE (CARDS MODERNOS) --- */
-    .edu-grid-card {
-      background: #fff;
-      border: none;
-      border-radius: 20px;
-      padding: 35px;
-      height: 100%;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-      transition: all 0.4s ease;
-      border-top: 6px solid var(--accent);
+    .nav-link {
+      color: #ffffff !important;
     }
+  }
 
-    .edu-grid-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-    }
+  /* --- SEU ESTILO ORIGINAL DE FORMAÇÃO --- */
+  body {
+    background-color: var(--soft-bg);
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+  }
 
-    .edu-tag {
-      background: rgba(0, 198, 255, 0.1);
-      color: var(--accent);
-      padding: 4px 12px;
-      border-radius: 50px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      display: inline-block;
-      margin-bottom: 15px;
-    }
+  .heading_container h2 {
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: none;
+    margin-bottom: 40px;
+    position: relative;
+  }
 
-    .edu-grid-card h5 {
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 20px;
-    }
+  .heading_container h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 2px;
+  }
 
-    .edu-info-item {
-      font-size: 0.9rem;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: flex-start;
-    }
+  .edu-grid-card {
+    background: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 35px;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: all 0.4s ease;
+    border-top: 6px solid var(--accent);
+  }
 
-    .edu-info-item i {
-      color: var(--accent);
-      margin-right: 10px;
-      font-style: normal;
-      font-weight: bold;
-    }
+  .edu-grid-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  }
 
-    /* --- ESTILO EXPERIÊNCIA (TIMELINE SEXY) --- */
-    .timeline-container {
-      position: relative;
-      padding-left: 30px;
-    }
+  .edu-tag {
+    background: rgba(0, 198, 255, 0.1);
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
 
-    .timeline-container::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(to bottom, var(--accent), transparent);
-    }
+  .edu-grid-card h5 {
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
 
-    .exp-item {
-      position: relative;
-      margin-bottom: 50px;
-      background: var(--glass);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      padding: 30px;
-      border: 1px solid rgba(255,255,255,0.3);
-      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.05);
-    }
+  .edu-info-item {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+  }
 
-    .exp-item::before {
-      content: "";
-      position: absolute;
-      left: -37px;
-      top: 35px;
-      width: 14px;
-      height: 14px;
-      background: var(--accent);
-      border: 3px solid #fff;
-      border-radius: 50%;
-      box-shadow: 0 0 10px var(--accent);
-    }
+  .edu-info-item i {
+    color: var(--accent);
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: bold;
+  }
 
-    .exp-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      margin-bottom: 15px;
-    }
+  .timeline-container {
+    position: relative;
+    padding-left: 30px;
+  }
 
-    .exp-company-info {
-      display: flex;
-      align-items: center;
-    }
+  .timeline-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--accent), transparent);
+  }
 
-    .exp-logo {
-      width: 50px;
-      height: 50px;
-      object-fit: contain;
-      margin-right: 15px;
-      border-radius: 8px;
-    }
+  .exp-item {
+    position: relative;
+    margin-bottom: 50px;
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.05);
+  }
 
-    .exp-title {
-      font-weight: 700;
-      color: var(--primary);
-      font-size: 1.2rem;
-      margin: 0;
-    }
+  .exp-item::before {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 35px;
+    width: 14px;
+    height: 14px;
+    background: var(--accent);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent);
+  }
 
-    .exp-date {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: #fff;
-      background: var(--primary);
-      padding: 5px 15px;
-      border-radius: 50px;
-    }
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
 
-    .exp-desc {
-      font-size: 0.95rem;
-      line-height: 1.7;
-      color: #555;
-      text-align: justify;
-    }
+  .exp-company-info {
+    display: flex;
+    align-items: center;
+  }
 
-    .exp-desc a {
-      color: var(--accent);
-      font-weight: 600;
-    }
+  .exp-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 15px;
+    border-radius: 8px;
+  }
 
-    .footer_section {
-      background: var(--primary);
-      color: white;
-      padding: 40px 0;
-    }
+  .exp-title {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin: 0;
+  }
 
-  </style>
+  .exp-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--primary);
+    padding: 5px 15px;
+    border-radius: 50px;
+  }
+
+  .exp-desc {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555;
+    text-align: justify;
+  }
+
+  .footer_section {
+    background: var(--primary) !important;
+    color: white !important;
+    padding: 40px 0;
+  }
+
+  .footer_section a {
+    color: white !important;
+  }
+</style>
 </head>
 
 <body class="sub_page">
