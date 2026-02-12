@@ -1,0 +1,214 @@
+/* ============================================================
+   ESTILOS GERAIS & RESET
+   ============================================================ */
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.layout_padding { padding: 40px 0; } 
+.layout_padding2 { padding: 30px 0; }
+.layout_padding-bottom { padding-bottom: 40px; }
+
+.heading_container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.heading_container h2 {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #1a3a5f;
+  text-transform: uppercase;
+}
+
+a, button {
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+/* ============================================================
+   HEADER & NAV (ALTO CONTRASTE)
+   ============================================================ */
+.hero_area {
+  min-height: auto !important;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_section {
+  background-color: #1a3a5f !important; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.navbar-brand span {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  padding: 7px 20px;
+  margin: 5px 10px;
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 35px;
+}
+
+.custom_nav-container .navbar-nav .nav-item.active .nav-link, 
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link {
+  background-color: #ffffff;
+  color: #1a3a5f !important;
+  font-weight: 600;
+}
+
+/* ============================================================
+   HOME / SLIDER SECTION & ÍCONES SOCIAIS (GRID 4x2)
+   ============================================================ */
+.slider_section {
+  padding: 20px 0 40px 0;
+  flex: 1;
+}
+
+.slider_section .detail_box h1 {
+  font-weight: bold;
+  color: #1a3a5f;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.slider_section .detail_box a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #1a3a5f;
+  color: #ffffff;
+  border-radius: 35px;
+  margin-top: 20px;
+}
+
+.slider_section .detail_box a:hover {
+  background-color: #00c6ff;
+}
+
+.social_box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 160px;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.social_box a {
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 0 calc(25% - 10px);
+}
+
+.social_box a img {
+  width: 30px;
+  height: auto;
+  filter: invert(19%) sepia(31%) saturate(2314%) hue-rotate(188deg) brightness(91%) contrast(92%);
+  transition: all 0.3s ease;
+}
+
+.social_box a:hover img {
+  filter: invert(61%) sepia(85%) saturate(3062%) hue-rotate(165deg) brightness(101%) contrast(101%);
+  transform: translateY(-3px);
+}
+
+/* ============================================================
+   GALERIA (SEM CORTES)
+   ============================================================ */
+.gallery_item {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 30px);
+}
+
+.img_box {
+  width: 100%;
+  height: 220px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img_box img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+.detail_box {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+/* ============================================================
+   RODAPÉ (CORREÇÃO DE COR E LISTRA BRANCA)
+   ============================================================ */
+section, main, .info_section {
+  margin-bottom: 0 !important;
+}
+
+.footer_section {
+  background-color: #1a3a5f !important;
+  color: #ffffff !important;
+  padding: 30px 0 !important;
+  text-align: center;
+  margin-top: 0 !important;
+  border: none;
+}
+
+/* Força o nome e quaisquer links dentro do rodapé a serem brancos */
+.footer_section p, 
+.footer_section a, 
+.footer_section span {
+  margin: 0;
+  color: #ffffff !important;
+  font-weight: inherit;
+}
+
+.footer_section a:hover {
+  color: #00c6ff !important; /* Destaque azul claro ao passar o mouse no nome */
+}
+
+/* ============================================================
+   OUTROS
+   ============================================================ */
+.img-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modern-dropdown {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  padding: 10px;
+  margin-top: 15px !important;
+}
