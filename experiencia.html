@@ -2,478 +2,443 @@
 <html>
 
 <head>
-  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <title>Lineu Alberto | Experiência & Formação</title>
 
-  <title>Lineu Alberto</title>
-
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-  <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #002d5b;
+      --accent: #00c6ff;
+      --soft-bg: #f4f7f6;
+      --glass: rgba(255, 255, 255, 0.8);
+    }
+
+    body {
+      background-color: var(--soft-bg);
+      font-family: 'Poppins', sans-serif;
+      color: #444;
+    }
+
+    .heading_container h2 {
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: none;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .heading_container h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: var(--accent);
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      border-radius: 2px;
+    }
+
+    /* --- ESTILO ESCOLARIDADE (CARDS MODERNOS) --- */
+    .edu-grid-card {
+      background: #fff;
+      border: none;
+      border-radius: 20px;
+      padding: 35px;
+      height: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+      transition: all 0.4s ease;
+      border-top: 6px solid var(--accent);
+    }
+
+    .edu-grid-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+
+    .edu-tag {
+      background: rgba(0, 198, 255, 0.1);
+      color: var(--accent);
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .edu-grid-card h5 {
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .edu-info-item {
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .edu-info-item i {
+      color: var(--accent);
+      margin-right: 10px;
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    /* --- ESTILO EXPERIÊNCIA (TIMELINE SEXY) --- */
+    .timeline-container {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .timeline-container::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--accent), transparent);
+    }
+
+    .exp-item {
+      position: relative;
+      margin-bottom: 50px;
+      background: var(--glass);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.3);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.05);
+    }
+
+    .exp-item::before {
+      content: "";
+      position: absolute;
+      left: -37px;
+      top: 35px;
+      width: 14px;
+      height: 14px;
+      background: var(--accent);
+      border: 3px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    .exp-company-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .exp-logo {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      margin-right: 15px;
+      border-radius: 8px;
+    }
+
+    .exp-title {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    .exp-date {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--primary);
+      padding: 5px 15px;
+      border-radius: 50px;
+    }
+
+    .exp-desc {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #555;
+      text-align: justify;
+    }
+
+    .exp-desc a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .footer_section {
+      background: var(--primary);
+      color: white;
+      padding: 40px 0;
+    }
+
+  </style>
 </head>
 
 <body class="sub_page">
 
   <div class="hero_area">
-    <!-- header section strats -->
     <header class="header_section">
       <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/icones/favicon.png" alt="">
-            <span>
-              Lineu Alberto
-            </span>
+            
+            <span>Lineu Alberto</span>
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="s-1"> </span>
-            <span class="s-2"> </span>
-            <span class="s-3"> </span>
-          </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="experiencia.html"> Experiência </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="materiais.html"> Materiais </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="galeria.html"> Galeria </a>
-                </li>                
-              </ul>
-            </div>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre mim</a></li>
+              <li class="nav-item active"><a class="nav-link" href="experiencia.html">Formação e Trajetória</a></li>
+              <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Materiais
+  </a>
+  <div class="dropdown-menu modern-dropdown" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="publicacoes.html">Publicações</a>
+    <a class="dropdown-item" href="videos.html">Vídeos e Lives</a>
+    <a class="dropdown-item" href="cursos.html">Cursos e Disciplinas</a>
+    <a class="dropdown-item" href="outros.html">Outros materiais</a>
+    
+  </div>
+</li>
+              <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+            </ul>
           </div>
         </nav>
       </div>
     </header>
-    <!-- end header section -->
   </div>
 
-  <section class="blog_section layout_padding">
+  <section class="layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
-          Educação
-        </h2>
-        <!--<img src="images/plug.png" alt="">-->
+        <h2>Formação Acadêmica</h2>
       </div>
 
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="box">
-            <div class="img-box">
-              <!--<img src="images/blog1.jpg" alt="">-->
-            </div>
-            <div class="detail-box">
-              <h5>
-                Doutorado em Ciência da Computação
-              </h5>
-              <p>
-
-<a href="http://www.prppg.ufpr.br/site/ppginf/pb/">Universidade Federal do Paraná</a>
-
-<br> 2025-
-<ul>
-  <li>Area de concentração: Ciência da Computação.</li>
-  <li>Linha de pesquisa: Inteligência Computacional.</li>
-  <li>Grupo de pesquisa: Data Science & Big Data.</li>
-  <li>Título da dissertação: </a>.</li>
-  <li>Orientador: <a href="http://leg.ufpr.br/~ara/">Prof. Dr. Anderson Luiz Ara Souza</a>.</li>
-</ul>
-</p>
+      <div class="row mt-4">
+        <div class="col-lg-12 mb-4">
+          <div class="edu-grid-card">
+            <span class="edu-tag">Em andamento</span>
+            <h5>Doutorado em Ciência da Computação</h5>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="edu-info-item"><i>•</i> <strong>Instituição:</strong>&nbsp;<a href="http://www.prppg.ufpr.br/site/ppginf/pb/">UFPR</a> (2025 - Presente)</div>
+                <div class="edu-info-item"><i>•</i> <strong>Área:</strong>&nbsp;Ciência da Computação</div>
+                <div class="edu-info-item"><i>•</i> <strong>Linha de Pesquisa:</strong>&nbsp;Inteligência Computacional</div>
+              </div>
+              <div class="col-md-6">
+                <div class="edu-info-item"><i>•</i> <strong>Grupo:</strong>&nbsp;Data Science & Big Data</div>
+                <div class="edu-info-item"><i>•</i> <strong>Orientador:</strong>&nbsp;<a href="http://leg.ufpr.br/~ara/">Prof. Dr. Anderson Luiz Ara Souza</a></div>
+                <div class="edu-info-item"><i>•</i> <strong>Tese:</strong>&nbsp;<a href="link">...</a></div>
+              </div>
             </div>
           </div>
         </div>
-        
-        
 
-      <div class="row">
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <!--<img src="images/blog1.jpg" alt="">-->
-            </div>
-            <div class="detail-box">
-              <h5>
-                Mestrado em Informática
-              </h5>
-              <p>
-
-<a href="http://www.prppg.ufpr.br/site/ppginf/pb/">Universidade Federal do Paraná</a>
-
-<br> 2020-2022
-<ul>
-  <li>Area de concentração: Ciência da Computação.</li>
-  <li>Linha de pesquisa: Tecnologia da Informação.</li>
-  <li>Grupo de pesquisa: Data Science & Big Data.</li>
-  <li>Título da dissertação: <a href="https://hdl.handle.net/1884/78069">Testes de hipóteses para avaliação de parâmetros de regressão e dispersão em modelos multivariados de covariância linear generalizada</a>.</li>
-  <li>Orientador: <a href="http://www.leg.ufpr.br/~wagner/">Prof. Dr. Wagner Hugo Bonat</a>.</li>
-</ul>
-</p>
-            </div>
+        <div class="col-lg-6 mb-4">
+          <div class="edu-grid-card">
+            <span class="edu-tag">Concluído</span>
+            <h5>Mestrado em Informática</h5>
+            <div class="edu-info-item"><i>•</i> <strong>Instituição:</strong>&nbsp;<a href="http://www.prppg.ufpr.br/site/ppginf/pb/">UFPR</a> (2020 - 2022)</div>
+            <div class="edu-info-item"><i>•</i> <strong>Dissertação:</strong>&nbsp;<a href="https://hdl.handle.net/1884/78069">Testes de hipóteses em modelos multivariados de covariância linear generalizada.</a></div>
+            <div class="edu-info-item"><i>•</i> <strong>Orientador:</strong>&nbsp;<a href="http://www.leg.ufpr.br/~wagner/">Prof. Dr. Wagner Hugo Bonat</a></div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <!--<img src="images/blog2.jpg" alt="">-->
-            </div>
-            <div class="detail-box">
-              <h5>
-                Bacharelado em Estatística
-              </h5>
-              <p>
-<a href="http://www.coordest.ufpr.br/">Universidade Federal do Paraná</a>
 
-<br>
-2014-2019
-<ul>
-  <li>Título do TCC: Análise de variância multivariada para dados não gaussianos via teste Wald.</li>
-  <li>Autores: Jhenifer Caetano Veloso e Lineu Alberto Cavazani de Freitas.</li>
-    <li>Orientador: <a href="http://www.leg.ufpr.br/~wagner/">Prof. Dr. Wagner Hugo Bonat</a>.</li>
-</ul>
-
-
-</p>
-            </div>
+        <div class="col-lg-6 mb-4">
+          <div class="edu-grid-card">
+            <span class="edu-tag">Concluído</span>
+            <h5>Bacharelado em Estatística</h5>
+            <div class="edu-info-item"><i>•</i> <strong>Instituição:</strong>&nbsp;<a href="http://www.coordest.ufpr.br/">UFPR</a> (2014 - 2019)</div>
+            <div class="edu-info-item"><i>•</i> <strong>TCC:</strong>&nbsp;Análise de variância multivariada para dados não gaussianos via teste Wald.</div>
+            <div class="edu-info-item"><i>•</i> <strong>Autores:</strong>&nbsp;Jhenifer Caetano Veloso e Lineu Alberto Cavazani de Freitas.</div>
+            <div class="edu-info-item"><i>•</i> <strong>Orientador:</strong>&nbsp;<a href="http://www.leg.ufpr.br/~wagner/">Prof. Dr. Wagner Hugo Bonat</a></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- service section -->
-  <section class="service_section layout_padding">
+  <section class="layout_padding-bottom">
     <div class="container">
       <div class="heading_container">
-        <h2>
-          Experiência profissional
-        </h2>
-        <!--<img src="images/plug.png" alt="">-->
+        <h2>Trajetória Profissional</h2>
       </div>
 
-      <div class="service_container">
+      <div class="timeline-container mt-5">
 
-        <div class="box">
-          <div class="img-box">
-            <img src="images/experiencia-profissional/proplad.png" class="img1" alt="">
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <img src="images/experiencia-profissional/proplad.png" class="exp-logo" alt="PROPLAD">
+              <h5 class="exp-title">Coordenador de Estatística e Ciência de Dados</h5>
+            </div>
+            <span class="exp-date">Jan 2025 - Atual</span>
           </div>
-          <div class="detail-box">
-            <h5>
-              Coordenador de Estatística e Ciência de Dados
-            </h5>
-            <p>
-              Coordenador da Coordenadoria de Estatística e Ciência de Dados (CECD) vinculado à Pró-Reitoria de Planejamento e Dados (PROPLAD). 
+          <div class="exp-desc">
+            Coordenador da Coordenadoria de Estatística e Ciência de Dados (CECD) vinculado à Pró-Reitoria de Planejamento e Dados (PROPLAD).
+          </div>
+        </div>
 
-              <p>
-              Janeiro 2025 - Atual
-              </p>
-            </p>
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <h5 class="exp-title">Consultor, Assessor, Revisor & Instrutor</h5>
+            </div>
+            <span class="exp-date">2019 - Atual</span>
+          </div>
+          <div class="exp-desc">
+            <strong>Consultoria e Assessoria:</strong> Prestação de serviços especializados para empresas e projetos.<br>
+            <strong>Revisão Científica:</strong> Análise e aprimoramento de trabalhos acadêmicos e científicos.<br>
+            <strong>Aulas e Cursos:</strong> Ministração de aulas e cursos em diversas instituições e níveis.
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <img src="images/experiencia-profissional/sipad.jpg" class="exp-logo" alt="SIPAD">
+              <h5 class="exp-title">Estatístico</h5>
+            </div>
+            <span class="exp-date">2024 - 2025</span>
+          </div>
+          <div class="exp-desc">
+            Estatístico lotado na Superintendência de Inclusão, Políticas Afirmativas e Diversidade (SIPAD) da Universidade Federal do Paraná.
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <img src="images/experiencia-profissional/ufpr.png" class="exp-logo" alt="UFPR">
+              <h5 class="exp-title">Professor Universitário</h5>
+            </div>
+            <span class="exp-date">2023 - 2025</span>
+          </div>
+          <div class="exp-desc">
+            Professor substituto da carreira de magistério superior. Lotado no Setor de Ciências Exatas , Departamento de Estatística, Laboratório de Estatística e Geoinformação, Universidade Federal do Paraná. Disciplinas ministradas: CE301: Estatística Básica, CE003: Estatística II, CE009: Introdução à Estatística, MEPC: Métodos Estatísticos em Pesquisa Científica (pós graduação).
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <img src="images/experiencia-profissional/omega.jpeg" class="exp-logo" alt="Ômega">
+              <h5 class="exp-title">Professor Conteudista</h5>
+            </div>
+            <span class="exp-date">2021 - 2023</span>
+          </div>
+          <div class="exp-desc">
+            Professor conteudista na escola online de ciência de dados Ômega Data Academy trabalhando com: revisão e elaboração de materiais didáticos (e-books, slides, textos, figuras, códigos R, questões de fixação, etc), gerenciamento de plataformas de ensino online, auxílio na criação de cursos síncronos na área de Ciência de Dados, adaptação de cursos presenciais para autoinstrucionais na área de Ciência de Dados.
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <img src="images/experiencia-profissional/capes.png" class="exp-logo" alt="CAPES">
+              <h5 class="exp-title">Bolsista CAPES</h5>
+            </div>
+            <span class="exp-date">2020 - 2022</span>
+          </div>
+          <div class="exp-desc">
+            Bolsista contemplado pelo Programa de Demanda Social (DS) da Fundação Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES) para realização de mestrado em programa de pós-graduação stricto sensu oferecido por Instituição de Ensino Superior (IES) públicas.
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <img src="images/experiencia-profissional/ufpr.png" class="exp-logo" alt="Bradesco">
+              <h5 class="exp-title">Estágio de Prática em Docência</h5>
+            </div>
+            <span class="exp-date">2021 - 2021</span>
+          </div>
+          <div class="exp-desc">
+            Acompanhamento e auxílio da rotina didática da disciplina transversal de pós graduação intitulada Métodos Estatísticos em Pesquisa Científica, na Universidade Federal do Paraná. As atividades consistiam em apoio e desenvolvimento de material didático utilizado na disciplina, atendimento aos alunos por e-mail e durante as aulas ao vivo via chat, desenvolvimento de atividades avaliativas semanais, manutenção do banco de questões da disciplina, conduzir eventuais aulas.
           </div>
         </div>
 
 
-        <div class="box">
-          <div class="img-box">
-
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <img src="images/experiencia-profissional/bradesco.png" class="exp-logo" alt="Bradesco">
+              <h5 class="exp-title">Estagiário de Inteligência de Crédito</h5>
+            </div>
+            <span class="exp-date">2018 - 2019</span>
           </div>
-          <div class="detail-box">
-            <h5>
-              Consultor, Assessor, Revisor, Instrutor em Estatística e Ciência de Dados
-            </h5>
-            <p>
-              Consultoria e Assessoria: Prestação de serviços especializados para empresas e projetos.
-<br><br>              
-Revisão Científica: Análise e aprimoramento de trabalhos acadêmicos e científicos.
-
-<br><br>
-
-Aulas e Cursos: Ministração de aulas e cursos em diversas instituições e níveis.
-              <p>
-              Desde 2019 - Atual
-              </p>
-            </p>
+          <div class="exp-desc">
+            Programa de estágio do Banco Bradesco S.A realizado no Departamento de Inteligência de Crédito - Portfólio Produtos com Garantia Pessoa Física. Principais atividades: apoio às tarefas de desenvolvimento, manipulação e tratamento de bases de dados, auxílio a processos de automação e criação de estratégias de crédito, monitoramento de estratégias implantadas, geração e manutenção de relatórios analíticos dos portfólios, auxílio no mapeamento e otimização de processos de gestão de crédito, otimização de processos automáticos implementados em SAS.
           </div>
         </div>
 
-
-      <div class="service_container">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/experiencia-profissional/sipad.jpg" class="img1" alt="">
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <img src="images/experiencia-profissional/pet.png" class="exp-logo" alt="TJPR">
+              <h5 class="exp-title">Bolsista</h5>
+            </div>
+            <span class="exp-date">2017 - 2019</span>
           </div>
-          <div class="detail-box">
-            <h5>
-              Estatístico
-            </h5>
-            <p>
-              Estatístico lotado na <a href="https://sipad.ufpr.br/">Superintendência de Inclusão, Políticas Afirmativas e Diversidade (SIPAD)</a> da Universidade Federal do Paraná. 
-
-              <p>
-              Julho 2024 - Janeiro 2025
-              </p>
-            </p>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="img-box">
-            <img src="images/experiencia-profissional/ufpr.png" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Professor universitário
-            </h5>
-            <p>
-Professor substituto da carreira de magistério superior. Lotado no <a href="https://exatas.ufpr.br/">Setor de Ciências Exatas</a>
-, <a href="http://www.est.ufpr.br/">Departamento de Estatística</a>, <a href="http://leg.ufpr.br/">Laboratório de Estatística e Geoinformação</a>, <a href="https://ufpr.br/">Universidade Federal do Paraná</a>. Disciplinas ministradas: CE301: Estatística Básica, CE003: Estatística II, CE009: Introdução à Estatística, MEPC: Métodos Estatísticos em Pesquisa Científica (pós graduação).
-<p>
-Janeiro 2023 - Fevereiro 2025
-
-            </p>
+          <div class="exp-desc">
+            Membro bolsista do Programa de Educação Tutorial do curso de Estatística na Universidade Federal do Paraná atuando no desenvolvimento e manutenção das atividades de Ensino, Pesquisa e Extensão relacionadas a Estatística na Universidade Federal do Paraná.
           </div>
         </div>
         
-        <div class="box">
-          <div class="img-box">
-            <img src="images/experiencia-profissional/omega.jpeg" class="img1" alt="">
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <img src="images/experiencia-profissional/ufpr.png" class="exp-logo" alt="TJPR">
+              <h5 class="exp-title">Monitor de graduação</h5>
+            </div>
+            <span class="exp-date">2017 - 2017</span>
           </div>
-          <div class="detail-box">
-            <h5>
-              Professor conteudista
-            </h5>
-            <p>
-Professor conteudista na escola online de ciência de dados <a href="https://escola.omegadatascience.com.br/">Ômega Data Academy</a> trabalhando com: revisão e elaboração de materiais didáticos (e-books, slides, textos, figuras, códigos R, questões de fixação, etc), gerenciamento de plataformas de ensino online, auxílio na criação de cursos síncronos na área de Ciência de Dados, adaptação de cursos presenciais para autoinstrucionais na área de Ciência de Dados.
-<p>
-Outubro 2021 - Janeiro 2023
-
-            </p>
+          <div class="exp-desc">
+            Monitor da disciplina de Modelos Lineares Generalizados, ofertada no segundo semestre de 2017 na Universidade Federal do Paraná atuando no apoio e desenvolvimento de material didático e atendimento aos alunos.
           </div>
         </div>
-
-        <div class="box">
-          <div class="img-box">
-            <img src="images/experiencia-profissional/capes.png" class="img1" alt="">
+        
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <img src="images/experiencia-profissional/nemoc.png" class="exp-logo" alt="TJPR">
+              <h5 class="exp-title">Estagiário de Estatística (TJPR)</h5>
+            </div>
+            <span class="exp-date">2016 - 2017</span>
           </div>
-          <div class="detail-box">
-            <h5>
-              Bolsista CAPES
-            </h5>
-            <p>
-              Bolsista contemplado pelo Programa de Demanda Social (DS) da Fundação <a href="https://www.gov.br/capes/pt-br">Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)</a> para realização de mestrado em programa de pós-graduação stricto sensu oferecido por Instituição de Ensino Superior (IES) públicas.
-
-<p>              
-Março 2020 - Agosto 2022 
-</p>              
-            </p>
+          <div class="exp-desc">
+            Programa de estágio do Tribunal de Justiça do Paraná realizado no Núcleo de Estatística e Monitoramento da Corregedoria Geral da Justiça. Atividades: coletar e analisar dados para aferir a produtividade das Secretarias e dos Magistrados de todo o estado do Paraná, acompanhar procedimentos de monitoramento implantados com foco em Secretarias e Magistrados, identificar os principais problemas que dificultam a prestação jurisdicional, verificar índices que auxiliam a Presidência e a Corregedoria Geral da Justiça na elaboração de procedimentos e acompanhamento do cumprimento das metas impostas pelo Conselho Nacional de Justiça (CNJ), elaborar estudos sobre a necessidade de força-tarefa e designações pontuais de Magistrados e servidores em Comarcas consideradas deficitárias, bem como necessidade de criação de novas Unidades Judiciárias.
           </div>
         </div>
-        <div class="box ">
-          <div class="img-box">
-            <img src="images/experiencia-profissional/ufpr.png" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Prática em docência
-            </h5>
-            <p>
-Acompanhamento e auxílio da rotina didática da disciplina transversal de pós graduação intitulada Métodos Estatísticos em Pesquisa Científica, na Universidade Federal do Paraná. As atividades consistiam em apoio e desenvolvimento de material didático utilizado na disciplina, atendimento aos alunos por e-mail e durante as aulas ao vivo via chat, desenvolvimento de atividades avaliativas semanais, manutenção do banco de questões da disciplina, conduzir eventuais aulas.
-<p>
-Março 2021 - Agosto 2021
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/experiencia-profissional/bradesco.png" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Estagiário
-            </h5>
-            <p>
-Programa de estágio do Banco Bradesco S.A realizado no Departamento de Inteligência de Crédito - Portfólio Produtos com Garantia Pessoa Física. Principais atividades: apoio às tarefas de desenvolvimento, manipulação e tratamento de bases de dados, auxílio a processos de automação e criação de estratégias de crédito, monitoramento de estratégias implantadas, geração e manutenção de relatórios analíticos dos portfólios, auxílio no mapeamento e otimização de processos de gestão de crédito, otimização de processos automáticos implementados em SAS.
-<p>
-Agosto 2018 - Agosto 2019
-</p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/experiencia-profissional/pet.png" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Bolsista
-            </h5>
-            <p>
-Membro bolsista do <a href="https://pet.leg.ufpr.br/">Programa de Educação Tutorial do curso de Estatística</a> na Universidade Federal do Paraná atuando no desenvolvimento e manutenção das atividades de Ensino, Pesquisa e Extensão relacionadas a Estatística na Universidade Federal do Paraná.
-<p>
-Julho 2017 - Junho 2019
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/experiencia-profissional/ufpr.png" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Monitor de graduação
-            </h5>
-            <p>
-Monitor da disciplina de Modelos Lineares Generalizados, ofertada no segundo semestre de 2017 na Universidade Federal do Paraná atuando no apoio e desenvolvimento de material didático e atendimento aos alunos.
-<p>
-Julho 2017 - Dezembro 2017  
-</p>
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/experiencia-profissional/nemoc.png" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Estagiário
-            </h5>
-            <p>
-Programa de estágio do Tribunal de Justiça do Paraná realizado no <a href="https://www.tjpr.jus.br/noticias/-/asset_publisher/9jZB/content/corregedoria-geral-cria-o-nemoc-nucleo-de-monitoramento-e-estatistica-da-corregedoria/18319">Núcleo de Estatística e Monitoramento da Corregedoria Geral da Justiça</a>. Atividades: coletar e analisar dados para aferir a produtividade das Secretarias e dos Magistrados de todo o estado do Paraná, acompanhar procedimentos de monitoramento implantados com foco em Secretarias e Magistrados, identificar os principais problemas que dificultam a prestação jurisdicional, verificar índices que auxiliam a Presidência e a Corregedoria Geral da Justiça na elaboração de procedimentos e acompanhamento do cumprimento das metas impostas pelo Conselho Nacional de Justiça (CNJ), elaborar estudos sobre a necessidade de força-tarefa e designações pontuais de Magistrados e servidores em Comarcas consideradas deficitárias, bem como necessidade de criação de novas Unidades Judiciárias.
-<p>
-Julho 2016 - Junho 2017
-</p>
-            </p>
-          </div>
-        </div>
-
 
       </div>
     </div>
-    
-    
-  </section>
-  <!-- end service section -->
-
-
-  <!-- info section
-
-  <section class="info_section layout_padding">
-    <div class="container">
-      <div class="info_contact">
-        <div class="row">
-          <div class="col-md-4">
-            <a href="">
-              <img src="images/location-white.png" alt="">
-              <span>
-                Passages of Lorem Ipsum available
-              </span>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="">
-              <img src="images/telephone-white.png" alt="">
-              <span>
-                Call : +012334567890
-              </span>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="">
-              <img src="images/envelope-white.png" alt="">
-              <span>
-                demo@gmail.com
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 col-lg-9">
-          <div class="info_form">
-            <form action="">
-              <input type="text" placeholder="Enter your email">
-              <button>
-                subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3">
-          <div class="info_social">
-            <div>
-              <a href="">
-                <img src="images/fb.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/instagram.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </section>
 
-  <!-- end info section -->
-
-  <!-- footer section -->
   <footer class="container-fluid footer_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 col-md-9 mx-auto">
-          <p>
-            &copy; 2024 All Rights Reserved. Template By
-            <a href="https://html.design/">Free Html Templates</a>
-          </p>
-        </div>
-      </div>
+    <div class="container text-center">
+      <p>© 2026 | <a href="https://lineu96.github.io/">Lineu Alberto Cavazani de Freitas</a></p>
     </div>
   </footer>
-  <!-- footer section -->
-
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
-
-
 </body>
-
-</html>

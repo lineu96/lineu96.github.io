@@ -1,734 +1,553 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <title>Galeria | Lineu Alberto</title>
 
-  <title>Lineu Alberto</title>
-
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-  <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #004a99;
+      --accent: #00c6ff;
+      --soft-bg: #f4f9ff;
+    }
+
+    .hero_area {
+      background: linear-gradient(180deg, #ffffff 0%, var(--soft-bg) 100%);
+      padding-bottom: 30px;
+    }
+
+    .heading_container h2 {
+      color: var(--primary);
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+
+    .heading_container h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    /* Grid de Galeria Estilizado */
+    .gallery_item {
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+      height: calc(100% - 30px); /* Garante altura uniforme no row */
+      border: 1px solid #eee;
+    }
+
+    .gallery_item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+    }
+
+    .img_box {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .img_box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .detail_box {
+      padding: 15px;
+    }
+
+    .detail_box h5 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .detail_box p {
+      font-size: 0.85rem;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    .footer_section { 
+      background-color: #f8f9fa; 
+      padding: 20px 0; 
+      margin-top: 40px; 
+    }
+  </style>
 </head>
 
 <body class="sub_page">
 
   <div class="hero_area">
-    <!-- header section strats -->
     <header class="header_section">
       <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/icones/favicon.png" alt="">
-            <span>
-              Lineu Alberto
-            </span>
+            
+            <span>Lineu Alberto</span>
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="s-1"> </span>
-            <span class="s-2"> </span>
-            <span class="s-3"> </span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="s-1"> </span><span class="s-2"> </span><span class="s-3"> </span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="experiencia.html"> Experiência </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="materiais.html"> Materiais </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="galeria.html"> Galeria </a>
-                </li>                
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre mim</a></li>
+                <li class="nav-item"><a class="nav-link" href="experiencia.html">Formação e Trajetória</a></li>
+                <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Materiais
+  </a>
+  <div class="dropdown-menu modern-dropdown" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="publicacoes.html">Publicações</a>
+    <a class="dropdown-item" href="videos.html">Vídeos e Lives</a>
+    <a class="dropdown-item" href="cursos.html">Cursos e Disciplinas</a>
+    <a class="dropdown-item" href="outros.html">Outros materiais</a>
+    
+  </div>
+</li>
+                <li class="nav-item active"><a class="nav-link" href="galeria.html">Galeria</a></li>
               </ul>
             </div>
           </div>
         </nav>
       </div>
     </header>
-    <!-- end header section -->
   </div>
 
-
-
-
-  <!-- blog section -->
-
-  <section class="blog_section layout_padding">
+  <section class="layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
-          Galeria
-        </h2>
+        <h2>Galeria</h2>
+        <p>Registos de eventos, palestras, defesas académicas e conquistas desportivas.</p>
       </div>
+
       <div class="row">
 
         <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/coun-2025.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Sessão Solene do Conselho Universitário | Cerimônia UFPR 113 Anos
-              </h5>
-              <p>
-              Na Sessão Solene foi apresentado um vídeo de prestação de contas da gestão onde, em uma passagem, falei sobre o Observatório de Dados de Evasão e Baixa Procura, iniciativa coordenada por mim na CECD.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-
-        <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/south-stat-2025.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Encontro Sul Brasileiro de Estatística e Ciência de Dados 2025
-              </h5>
-              <p>
-                Participei do II Encontro Sul Brasileiro de Estatística e Ciência de Dados e do 5º R Day – Encontro Nacional de Usuários do R. Os eventos foram em Santa Maria - RS, no campus da UFSM.
-              </p>
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/pochman.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Apresentação do Plano de Trabalho 2026 do IBGE</h5>
+              <p>Estive no evento do IBGE representando a UFPR. Na foto, ao meu lado, está o sr. Marcio Pochman, presidente do IBGE.</p>
             </div>
           </div>
         </div>
         
         <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/superligac25.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Superliga C - Regional Sul 2025
-              </h5>
-              <p>
-                Estive representando o município de São José dos Pinhais na Superliga C - Regional Sul 2025, que dá acesso à maior competição de clubes de voleibol no Brasil.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/japs25.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Jogos Abertos do Paraná 2025
-              </h5>
-              <p>
-                Neste ano fui campeão dos Jogos Abertos do Paraná - Fase Regional, representando o município de São José dos Pinhais.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/cpa.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                2º Seminário das Comissões Próprias de Avaliação
-              </h5>
-              <p>
-                Participei do evento com o tema "15 anos de Avaliação Institucional no IFPR: Saberes, Práticas e Inovações como membro representante da gestão da Comissão Própria de Avaliação (CPA) da UFPR.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/evento-evasao-2025.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                I Seminário de Combate à Evasão na UFPR 2025 
-              </h5>
-              <p>
-                Participei do evento como membro da Comissão de Combate à Evasão e Baixa Procura da UFPR.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/maceio-24.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Maceió 2024
-              </h5>
-              <p>
-                Viagem de família
-              </p>
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/coun-2025.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Sessão Solene do Conselho Universitário | Cerimônia UFPR 113 Anos</h5>
+              <p>Na Sessão Solene foi apresentado um vídeo de prestação de contas da gestão onde, em uma passagem, falei sobre o Observatório de Dados de Evasão e Baixa Procura, iniciativa coordenada por mim na CECD.</p>
             </div>
           </div>
         </div>
 
         <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/japs.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Jogos Abertos do Paraná 2024
-              </h5>
-              <p>
-                Minha primeira participação nos Jogos Abertos do Paraná no vôlei de praia, como atleta convidado pelo município de São Matheus do Sul.
-              </p>
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/south-stat-2025.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Encontro Sul Brasileiro de Estatística e Ciência de Dados 2025</h5>
+              <p>Participei do II Encontro Sul Brasileiro de Estatística e Ciência de Dados e do 5º R Day – Encontro Nacional de Usuários do R. Os eventos foram em Santa Maria - RS, no campus da UFSM.</p>
             </div>
           </div>
         </div>
 
         <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/cpvp.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Circuito Paranaense de Vôlei de Praia 2024
-              </h5>
-              <p>
-                Minha primeira participação em competições estaduais de vôlei de praia.
-              </p>
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/superligac25.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Superliga C - Regional Sul 2025</h5>
+              <p>Estive representando o município de São José dos Pinhais na Superliga C - Regional Sul 2025, que dá acesso à maior competição de clubes de voleibol no Brasil.</p>
             </div>
           </div>
         </div>
-
 
         <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/palestra2.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                4º Rday/1º Encontro Sul Brasileiro de Estatística e Ciência de Dados 2023
-              </h5>
-              <p>
-                Nestes eventos participei da comissão organizadora local, comissão avaliadora de trabalhos científicos e apresentei o trabalho "htmcglm: Hypothesis Testing for McGLMs" na sessão cases de trabalhos acadêmicos.
-              </p>
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/japs25.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Jogos Abertos do Paraná 2025</h5>
+              <p>Neste ano fui campeão dos Jogos Abertos do Paraná - Fase Regional, representando o município de São José dos Pinhais.</p>
             </div>
           </div>
         </div>
-        
+
         <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/magalhaes2023.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Professor Marcos Magalhães
-              </h5>
-              <p>
-                Registro com o professor Marcos Nascimento Magalhães do Departamento de Estatística do IME-USP e autor dos livros “Noções de Probabilidade e Estatística” e “Probabilidade e Variáveis Aleatórias”.
-                
-              </p>
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/cpa.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>2º Seminário das Comissões Próprias de Avaliação</h5>
+              <p>Participei do evento com o tema "15 anos de Avaliação Institucional no IFPR: Saberes, Práticas e Inovações como membro representante da gestão da Comissão Própria de Avaliação (CPA) da UFPR.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/melhor-central-regional.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Campeonato Regional de voleibol 2023
-              </h5>
-              <p>
-                Em 2023 fui terceiro colocado e eleito melhor central da competição representando São José dos Pinhais.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/melhor-central-2023.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Campeonato Paranaense de voleibol, série B 2023
-              </h5>
-              <p>
-                Em 2023 fui eleito melhor central da competição representando São José dos Pinhais.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/evento-evasao-2025.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>I Seminário de Combate à Evasão na UFPR 2025</h5>
+              <p>Participei do evento como membro da Comissão de Combate à Evasão e Baixa Procura da UFPR.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/dia-do-estatistico-2023.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Dia do Estatístico 2023
-              </h5>
-              <p>
-                No dia do Estatístico fui convidado à palestrar para os alunos de graduação da UFPR.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/melhor-central-2022.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Campeonato Paranaense de voleibol, série A 2022
-              </h5>
-              <p>
-                Em 2022 fui vice campeão e eleito melhor central da competição representando São José dos Pinhais.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/mestrado2022.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Defesa de mestrado
-              </h5>
-              <p>
-                Em agosto de 2022 defendi minha dissertação de mestrado no Programa de Pós Graduação em Informática da UFPR.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/maceio-24.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Maceió 2024</h5>
+              <p>Viagem de família</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/mvp2022.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                II Super Vôlei Brusque 2022
-              </h5>
-              <p>
-                Em 2022 fui campeão e eleito melhor jogador (MVP) da competição representando a equipe 5ª Squadra - Jaraguá do Sul.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/volei2021.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Campeonato Paranaense de voleibol, série A 2021
-              </h5>
-              <p>
-                Registro do campeonato paranaense representando São José dos Pinhais.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/japs.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Jogos Abertos do Paraná 2024</h5>
+              <p>Minha primeira participação nos Jogos Abertos do Paraná no vôlei de praia, como atleta convidado pelo município de São Matheus do Sul.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/volei-pos-pandemia.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Campeonato Paranaense de voleibol, série A 2021
-              </h5>
-              <p>
-                Primeiro jogo do campeonato paranaense após a pandemia de COVID-19.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/tcc.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Apresentação de TCC
-              </h5>
-              <p>
-                Em junho de 2019 aconteceu minha defesa de TCC na graduação em Estatística da UFPR. Na foto estão o prof. Wagner Bonat (orientador), prof. Walmes Zeviane (banca), eu, Jhenifer Veloso (dupla de TCC) e prof. Cesar Taconeli (banca).
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/cpvp.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Circuito Paranaense de Vôlei de Praia 2024</h5>
+              <p>Minha primeira participação em competições estaduais de vôlei de praia.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/dsbd.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                1º Encontro de Data Science & Big Data UFPR 2019
-              </h5>
-              <p>
-                Em junho de 2019 foi realizada na UFPR o 1º Encontro de Data Science & Big Data. Como aluno de graduação participei da organização do evento.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/palestra2.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>4º Rday/1º Encontro Sul Brasileiro de Estatística e Ciência de Dados 2023</h5>
+              <p>Nestes eventos participei da comissão organizadora local, comissão avaliadora de trabalhos científicos e apresentei o trabalho "htmcglm: Hypothesis Testing for McGLMs" na sessão cases de trabalhos acadêmicos.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/mincurso2019.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Minicurso R 2019
-              </h5>
-              <p>
-                Minicurso de linguagem R oferecido pelo PET-Estatística UFPR.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/magalhaes2023.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Professor Marcos Magalhães</h5>
+              <p>Registro com o professor Marcos Nascimento Magalhães do Departamento de Estatística do IME-USP e autor dos livros “Noções de Probabilidade e Estatística” e “Probabilidade e Variáveis Aleatórias”.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/paranaense2019.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Campeonato Paranaense de voleibol, série A 2019
-              </h5>
-              <p>
-                Registro do campeonato estadual representando a equipe UFPR/SJP.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/melhor-central-regional.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Campeonato Regional de voleibol 2023</h5>
+              <p>Em 2023 fui terceiro colocado e eleito melhor central da competição representando São José dos Pinhais.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/universitarios2019.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-               Jogos Universitários do Paraná 2019
-              </h5>
-              <p>
-                Registro dos jogos universitários do Paraná representando a UFPR.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/jojups.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Jogos Universitários do Paraná 2018
-              </h5>
-              <p>
-                Registro dos jogos universitários do Paraná representando a UFPR.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/melhor-central-2023.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Campeonato Paranaense de voleibol, série B 2023</h5>
+              <p>Em 2023 fui eleito melhor central da competição representando São José dos Pinhais.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/siepe.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                10ª SIEPE 2018
-              </h5>
-              <p>
-                Na 10ª SIEPE apresentei o trabalho "Análise
-estatística do comportamento de ovelhas usando GAMLSS" como comunicação oral.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/dia-do-estatistico-2023.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Dia do Estatístico 2023</h5>
+              <p>No dia do Estatístico fui convidado à palestrar para os alunos de graduação da UFPR.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/estadual2018.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Campeonato Paranaense de voleibol, série B 2018
-              </h5>
-              <p>
-                Em 2018 representei a equipe da UFPR no campeonato estadual.
-              </p>
-            </div>
-          </div>
-        </div>
-        
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/sinape.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                23º SINAPE 2018
-              </h5>
-              <p>
-                Em 2018 estive no 23º Simpósio Nacional de Probabilidade e Estatística, realizado em São Pedro/SP. Apresentei na sessão poster o trabalho "Análise comportamental de ovelhas submetidas a intervenção humana usando GAMLSS."
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/melhor-central-2022.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Campeonato Paranaense de voleibol, série A 2022</h5>
+              <p>Em 2022 fui vice campeão e eleito melhor central da competição representando São José dos Pinhais.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/rbras.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                63ª RBRAS 2018
-              </h5>
-              <p>
-                Em 2018 participei da 63ª Reunião Anual da Região Brasileira da Sociedade Internacional de Biometria em Curitiba. Na ocasião apresentei o trabalho "Análise comportamental de ovelhas submetidas a intervenção humana usando GAMLSS". Na foto estão os professores Cesar Taconeli e José Padilha, orientadores do trabalho. 
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/mestrado2022.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Defesa de mestrado</h5>
+              <p>Em agosto de 2022 defendi minha dissertação de mestrado no Programa de Pós Graduação em Informática da UFPR.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/equipe.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                1º Rday/63ª RBRAS 2018
-              </h5>
-              <p>
-                Equipe PET-Estatística que atuou no apoio aos eventos que ocorreram em Curitiba.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/mvp2022.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>II Super Vôlei Brusque 2022</h5>
+              <p>Em 2022 fui campeão e eleito melhor jogador (MVP) da competição representando a equipe 5ª Squadra - Jaraguá do Sul.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/feira2017.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-               Feira de cursos e profissões UFPR 2017
-              </h5>
-              <p>
-                Participação no stand de Estatística.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/volei2021.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Campeonato Paranaense de voleibol, série A 2021</h5>
+              <p>Registro do campeonato paranaense representando São José dos Pinhais.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/feira2015.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Feira de cursos e profissões UFPR 2015
-              </h5>
-              <p>
-                Participação no stand de Estatística.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/volei-pos-pandemia.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Campeonato Paranaense de voleibol, série A 2021</h5>
+              <p>Primeiro jogo do campeonato paranaense após a pandemia de COVID-19.</p>
             </div>
           </div>
         </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/estadual2015.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Campeonato Paranaense de voleibol, série B 2015
-              </h5>
-              <p>
-                Registro do estadual 2015 representando o Círculo Militar do Paraná.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/tcc.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Apresentação de TCC</h5>
+              <p>Em junho de 2019 aconteceu minha defesa de TCC na graduação em Estatística da UFPR. Na foto estão o prof. Wagner Bonat (orientador), prof. Walmes Zeviane (banca), eu, Jhenifer Veloso (dupla de TCC) e prof. Cesar Taconeli (banca).</p>
             </div>
           </div>
-        </div> 
-        
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/juventude-2014.jpeg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Jogos da Juventude do Paraná 2014
-              </h5>
-              <p>
-                Em 2014 fui terceiro colocado nos jogos da juventude representado a seleção de Curitiba.
-              </p>
-            </div>
-          </div>
-        </div> 
-        
+        </div>
 
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/preadol.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Minha família
-              </h5>
-              <p>
-                Registro de uma viagem.
-              </p>
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/dsbd.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>1º Encontro de Data Science & Big Data UFPR 2019</h5>
+              <p>Em junho de 2019 foi realizada na UFPR o 1º Encontro de Data Science & Big Data. Como aluno de graduação participei da organização do evento.</p>
             </div>
           </div>
-        </div> 
-        
-        
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/infancia.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Jardim Botânico de Curitiba
-              </h5>
-              <p>
-                Registro em família.
-              </p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/mincurso2019.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Minicurso R 2019</h5>
+              <p>Minicurso de linguagem R oferecido pelo PET-Estatística UFPR.</p>
             </div>
           </div>
-        </div>   
-        
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/97.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Mini eu
-              </h5>
-              <p>
-                Dispensa legendas
-              </p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/paranaense2019.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Campeonato Paranaense de voleibol, série A 2019</h5>
+              <p>Registro do campeonato estadual representando a equipe UFPR/SJP.</p>
             </div>
           </div>
-        </div>        
-        
-       <div class="col-md-3">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/galeria/96.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                O início...
-              </h5>
-              <p>
-                Nasci em 1996 no município de Curitiba, capital do Paraná. Registro com minha mãe.
-              </p>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/universitarios2019.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Jogos Universitários do Paraná 2019</h5>
+              <p>Registro dos jogos universitários do Paraná representando a UFPR.</p>
             </div>
           </div>
-        </div>        
-        
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/jojups.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Jogos Universitários do Paraná 2018</h5>
+              <p>Registro dos jogos universitários do Paraná representando a UFPR.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/siepe.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>10ª SIEPE 2018</h5>
+              <p>Na 10ª SIEPE apresentei o trabalho "Análise estatística do comportamento de ovelhas usando GAMLSS" como comunicação oral.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/estadual2018.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Campeonato Paranaense de voleibol, série B 2018</h5>
+              <p>Em 2018 representei a equipe da UFPR no campeonato estadual.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/sinape.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>23º SINAPE 2018</h5>
+              <p>Em 2018 estive no 23º Simpósio Nacional de Probabilidade e Estatística, realizado em São Pedro/SP. Apresentei na sessão poster o trabalho "Análise comportamental de ovelhas submetidas a intervenção humana usando GAMLSS."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/rbras.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>63ª RBRAS 2018</h5>
+              <p>Em 2018 participei da 63ª Reunião Anual da Região Brasileira da Sociedade Internacional de Biometria em Curitiba. Na ocasião apresentei o trabalho "Análise comportamental de ovelhas submetidas a intervenção humana usando GAMLSS". Na foto estão os professores Cesar Taconeli e José Padilha, orientadores do trabalho.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/equipe.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>1º Rday/63ª RBRAS 2018</h5>
+              <p>Equipe PET-Estatística que atuou no apoio aos eventos que ocorreram em Curitiba.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/feira2017.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Feira de cursos e profissões UFPR 2017</h5>
+              <p>Participação no stand de Estatística.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/feira2015.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Feira de cursos e profissões UFPR 2015</h5>
+              <p>Participação no stand de Estatística.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/estadual2015.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Campeonato Paranaense de voleibol, série B 2015</h5>
+              <p>Registro do estadual 2015 representando o Círculo Militar do Paraná.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/juventude-2014.jpeg" alt=""></div>
+            <div class="detail_box">
+              <h5>Jogos da Juventude do Paraná 2014</h5>
+              <p>Em 2014 fui terceiro colocado nos jogos da juventude representado a seleção de Curitiba.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/preadol.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Minha família</h5>
+              <p>Registro de uma viagem.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/infancia.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Jardim Botânico de Curitiba</h5>
+              <p>Registro em família.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/97.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>Mini eu</h5>
+              <p>Dispensa legendas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="gallery_item">
+            <div class="img_box"><img src="images/galeria/96.jpg" alt=""></div>
+            <div class="detail_box">
+              <h5>O início...</h5>
+              <p>Nasci em 1996 no município de Curitiba, capital do Paraná. Registro com minha mãe.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- end blog section -->
-
-  <!-- footer section -->
   <footer class="container-fluid footer_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 col-md-9 mx-auto">
-          <p>
-            &copy; 2024 All Rights Reserved. Template By
-            <a href="https://html.design/">Free Html Templates</a>
-          </p>
-        </div>
-      </div>
+    <div class="container text-center">
+      <p>© 2026 | <a href="https://lineu96.github.io/">Lineu Alberto Cavazani de Freitas</a></p>
     </div>
   </footer>
-  <!-- footer section -->
-
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
-
 </body>
-
 </html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Materiais | Lineu Alberto</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #004a99;
+      --accent: #00c6ff;
+      --soft-bg: #f4f9ff;
+    }
+
+    .hero_area {
+      background: linear-gradient(180deg, #ffffff 0%, var(--soft-bg) 100%);
+      padding-bottom: 30px;
+    }
+
+    .heading_container h2 {
+      color: var(--primary);
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+
+    .heading_container h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .content_card {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      margin-bottom: 40px;
+    }
+
+    .content_card h5 {
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-left: 5px solid var(--accent);
+      padding-left: 15px;
+    }
+
+    .badge_type {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-right: 10px;
+    }
+    .bg-publicado { background-color: #e3f2fd; color: #1976d2; }
+    .bg-preprint { background-color: #fff3e0; color: #f57c00; }
+    .bg-mestrado { background-color: #f3e5f5; color: #7b1fa2; }
+    .bg-tcc { background-color: #e8f5e9; color: #388e3c; }
+
+    .content_card p, .content_card ul { color: #444; line-height: 1.7; }
+    .content_card a { color: var(--primary); font-weight: 600; text-decoration: underline; }
+    .content_card a:hover { color: var(--accent); }
+
+    .material_grid_box {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      transition: 0.4s;
+    }
+    .material_grid_box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      border-color: var(--accent);
+    }
+    .material_grid_box .img-box img { width: 100%; height: auto; display: block; }
+    .material_grid_box .detail-box { padding: 20px; }
+    .material_grid_box h5 a { text-decoration: none; color: var(--primary); font-weight: 700; }
+
+    .footer_section { background-color: #f8f9fa; padding: 20px 0; margin-top: 40px; }
+  </style>
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            
+            <span>Lineu Alberto</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="s-1"> </span><span class="s-2"> </span><span class="s-3"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre mim</a></li>
+                <li class="nav-item"><a class="nav-link" href="experiencia.html">Formação e Trajetória</a></li>
+                <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Materiais
+  </a>
+  <div class="dropdown-menu modern-dropdown" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="publicacoes.html">Publicações</a>
+    <a class="dropdown-item" href="videos.html">Vídeos e Lives</a>
+    <a class="dropdown-item" href="cursos.html">Cursos e Disciplinas</a>
+    <a class="dropdown-item" href="outros.html">Outros materiais</a>
+    
+  </div>
+</li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <section class="blog_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Outros materiais</h2>
+        <p>Aqui você encontrará outros materiais como pacotes R, posts e materiais de aulas.</p>
+      </div>
+
+
+
+      <div class="heading_container mt-5">
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="material_grid_box">
+            <div class="img-box"><img src="images/materiais/mepc.png" alt=""></div>
+            <div class="detail-box">
+              <h5><a href="https://lineu96.github.io/r-mepc/">MEPC - Apoio em R</a></h5>
+              <p>Aulas em vídeo e materiais associados à linguagem R utilizados na disciplina transversal de Métodos Estatísticos em Pesquisa Científica (MEPC).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="material_grid_box">
+            <div class="img-box"><img src="images/materiais/mcglm.png" alt=""></div>
+            <div class="detail-box">
+              <h5><a href="https://cran.r-project.org/web/packages/htmcglm/index.html">htmcglm</a></h5>
+              <p>Pacote R para efetuar testes de hipóteses sobre parâmetros de modelos multivariados de covariância linear generalizada (McGLM).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="material_grid_box">
+            <div class="img-box"><img src="images/materiais/rrstudio.png" alt=""></div>
+            <div class="detail-box">
+              <h5><a href="https://lineu96.github.io/minicurso_r/">Minicurso R</a></h5>
+              <p>Material introdutório de R para iniciantes e primeiros passos na linguagem.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="material_grid_box">
+            <div class="img-box"><img src="images/materiais/gama.png" alt=""></div>
+            <div class="detail-box">
+              <h5><a href="https://lineu96.github.io/glm/">Aplicações de GLM</a></h5>
+              <p>Material produzido na monitoria da disciplina de Modelos Lineares Generalizados (CE225) UFPR.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="material_grid_box">
+            <div class="img-box"><img src="images/materiais/portal.png" alt=""></div>
+            <div class="detail-box">
+              <h5><a href="https://lineu96.github.io/covid19/">Monitoramento COVID-19</a></h5>
+              <p>Contribuição ao Portal COVID19 do Setor de Ciências Exatas da Universidade Federal do Paraná (UFPR).</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="material_grid_box">
+            <div class="img-box"><img src="images/materiais/covid-19.png" alt=""></div>
+            <div class="detail-box">
+              <h5><a href="https://lineu96.github.io/posts/4-epidem.html">Conceitos de Epidemiologia</a></h5>
+              <p>Discussão sobre a taxa de reprodução, métrica que estima a disseminação de uma doença infectocontagiosa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="material_grid_box">
+            <div class="img-box"><img src="images/materiais/fluxo.jpg" alt=""></div>
+            <div class="detail-box">
+              <h5><a href="https://lineu96.github.io/posts/3-logprog.html">Lógica de Programação</a></h5>
+              <p>Principais estruturas para compreender a lógica das linguagens de programação e escrever algoritmos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="material_grid_box">
+            <div class="img-box"><img src="images/materiais/rmd.png" alt=""></div>
+            <div class="detail-box">
+              <h5><a href="https://lineu96.github.io/posts/5-rmarkdown.html">Relatórios Rmarkdown</a></h5>
+              <p>Um pequeno referencial de como gerar relatórios com RMarkdown em formato HTML.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="material_grid_box">
+            <div class="img-box"><img src="images/materiais/dptd.png" alt=""></div>
+            <div class="detail-box">
+              <h5><a href="https://lineu96.github.io/posts/2-tidyr-dplyr.html">tidyr e dplyr</a></h5>
+              <p>Exploração dos pacotes fundamentais para arrumar e transformar dados no R.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="material_grid_box">
+            <div class="img-box"><img src="images/materiais/ggplot2.png" alt=""></div>
+            <div class="detail-box">
+              <h5><a href="https://lineu96.github.io/posts/1-ggplot2.html">Primeiros Passos ggplot2</a></h5>
+              <p>Visualização de dados utilizando o ggplot2 e customizações simples de cores e temas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid footer_section">
+    <div class="container text-center">
+      <p>© 2026 | <a href="https://lineu96.github.io/">Lineu Alberto Cavazani de Freitas</a></p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>

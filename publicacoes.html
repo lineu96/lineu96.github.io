@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Publicações | Lineu Alberto</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #004a99;
+      --accent: #00c6ff;
+      --soft-bg: #f4f9ff;
+    }
+
+    .hero_area {
+      background: linear-gradient(180deg, #ffffff 0%, var(--soft-bg) 100%);
+      padding-bottom: 20px;
+    }
+
+    .heading_container h2 {
+      color: var(--primary);
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+
+    .heading_container h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    /* Card de Publicações */
+    .content_card {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+    }
+
+    .publication-item {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px dashed #eee;
+    }
+
+    .publication-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    /* Badges Customizados */
+    .badge_type {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .bg-publicado { background-color: #e3f2fd; color: #1976d2; }
+    .bg-preprint { background-color: #fff3e0; color: #f57c00; }
+    .bg-mestrado { background-color: #f3e5f5; color: #7b1fa2; }
+    .bg-tcc { background-color: #e8f5e9; color: #388e3c; }
+
+    .publication-text {
+      color: #444;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .publication-text u {
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    .publication-text a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .publication-text a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .footer_section {
+      background-color: var(--primary);
+      color: white;
+      padding: 30px 0;
+    }
+    .footer_section a { color: var(--accent); }
+  </style>
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>Lineu Alberto</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="s-1"> </span><span class="s-2"> </span><span class="s-3"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre mim</a></li>
+              <li class="nav-item"><a class="nav-link" href="experiencia.html">Formação e Trajetória</a></li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Materiais</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="publicacoes.html">Publicações</a>
+                  <a class="dropdown-item" href="videos.html">Vídeos e Lives</a>
+                  <a class="dropdown-item" href="cursos.html">Cursos e Disciplinas</a>
+                  <a class="dropdown-item" href="outros.html">Outros materiais</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <section class="layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Publicações</h2>
+        <p>Produção acadêmica e técnica em Estatística e Ciência de Dados.</p>
+      </div>
+
+      <div class="content_card">
+        
+        <div class="publication-item">
+          <span class="badge_type bg-publicado">PUBLICADO</span>
+          <div class="publication-text">
+            PINTO G. O. P. A., SALDANHA A., de SOUZA G. S., de OLIVEIRA W. J., BELTRAME O. C., <u>de FREITAS L. A. C.</u>, da ROCHA C. & LPCATELLI-DITTRICH R. (2024). <a href="https://doi.org/10.22456/1679-9216.133961" target="_blank">Healthy Captive Rose-ringed Parakeets (Psittacula krameri) - Hematological and Biochemical Values</a>. Acta Scientiae Veterinariae, 52, 1948.
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <span class="badge_type bg-publicado">PUBLICADO</span>
+          <div class="publication-text">
+            CARLOS, L. D. O., RAMOS, M. R. Z ., WAGNER, N. R. F., FAZZINO, T., FERREIRA, M., AMORIM, A. F., <u>de FREITAS, L. A. C.</u>, FELICIDADE, I., & CAMPOS, A. C. L. (2024). <a href="https://www.sciencedirect.com/science/article/abs/pii/S1471015323001411" target="_blank">The prevalence of hyperpalatable food intake among individuals with food addiction seeking bariatric surgery</a>. Eating Behaviors, 52, 101841.
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <span class="badge_type bg-preprint">PREPRINT</span>
+          <div class="publication-text">
+            <u>de Freitas, L. A. C.</u>, & Bonat, W. H. (2022). <a href="https://arxiv.org/abs/2208.01568" target="_blank">Hypothesis tests for multiple responses regression models in R: The htmcglm Package</a>. arXiv preprint arXiv:2208.01568.
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <span class="badge_type bg-preprint">PREPRINT</span>
+          <div class="publication-text">
+            <u>de Freitas, L. A. C.</u>, Carlos, L. D. O., Campos, A. C. L., & Bonat, W. H. (2022). <a href="https://arxiv.org/abs/2208.00027" target="_blank">Hypothesis tests for multiple responses regression: effect of probiotics on addiction and binge eating disorder</a>. arXiv preprint arXiv:2208.00027.
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <span class="badge_type bg-mestrado">DISSERTAÇÃO DE MESTRADO</span>
+          <div class="publication-text">
+            <u>Freitas, L. A. C. D.</u> (2022) <a href="https://hdl.handle.net/1884/78069" target="_blank">Teste Wald para avaliação de parâmetros de regressão e dispersão em modelos multivariados de covariância linear generalizada</a>. Repositório UFPR.
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <span class="badge_type bg-publicado">PUBLICADO</span>
+          <div class="publication-text">
+            CARLOS, L. D. O., Ramos, M. R. Z., Wagner, N. R. F., <u>FREITAS, L. A. C. D.</u>, Felicidade, I., & Campos, A. C. L. (2022). <a href="https://www.scielo.br/j/abcd/a/95rkXVwc4cGLTM5xq8Chgwv/abstract/?lang=en" target="_blank">Probiotic supplementation attenuates binge eating and food addiction 1 year after Roux-en-Y Gastric Bypass</a>. ABCD, 35.
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <span class="badge_type bg-publicado">PUBLICADO</span>
+          <div class="publication-text">
+            <u>de FREITAS, L. A. C.</u>, TACONELI, C. A., da SILVA, J. L. P., TAMIOSO, P. R., & MOLENTO, C. F. M. (2021). <a href="https://biometria.ufla.br/index.php/BBJ/article/view/488" target="_blank">A CASE STUDY ON ANIMAL BEHAVIOR ANALYSIS USING GAMLSS</a>. Brazilian Journal of Biometrics, 39(3).
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <span class="badge_type bg-tcc">TRABALHO DE CONCLUSÃO DE CURSO</span>
+          <div class="publication-text">
+            Veloso, J. C., & de <u>Freitas, L. A. C.</u> (2019). <strong>Análise de Variância Multivariada para Dados Não Gaussianos via Teste Wald</strong>. Bacharelado em Estatística - UFPR.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_section">
+    <div class="container text-center">
+      <p>© 2026 | <a href="https://lineu96.github.io/">Lineu Alberto Cavazani de Freitas</a></p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>

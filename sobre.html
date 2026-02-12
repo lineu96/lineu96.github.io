@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Lineu Alberto | Sobre Mim</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #004a99;
+      --accent: #00c6ff;
+    }
+
+    /* Sobre Mim - Estilos específicos */
+    .about_section { padding: 60px 0; background: #fff; }
+    
+    .about-card {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.04);
+      border: 1px solid #f0f0f0;
+    }
+    
+    /* Lista com check personalizado */
+    .about-card ul { list-style: none; padding-left: 0; margin: 20px 0; }
+    .about-card ul li {
+      position: relative; padding-left: 30px; margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .about-card ul li::before {
+      content: '✓'; position: absolute; left: 0;
+      color: var(--accent); font-weight: bold;
+    }
+
+    /* Box de Citação */
+    .quote-box {
+      border-left: 5px solid var(--accent); padding: 25px;
+      background: #f9fcff; border-radius: 0 15px 15px 0;
+      margin-top: 35px; font-style: italic; color: #444;
+      line-height: 1.7;
+    }
+
+    /* Interatividade Imagens */
+    .img-box.interativo {
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: 0.4s;
+    }
+    .img-box.interativo:hover {
+      transform: scale(1.02);
+    }
+    .img-box.interativo img {
+      width: 100%;
+      height: auto;
+      transition: 0.5s;
+      display: block;
+    }
+    .img-box.interativo:hover img {
+      transform: scale(1.08);
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>Lineu Alberto</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="s-1"> </span><span class="s-2"> </span><span class="s-3"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="sobre.html">Sobre mim</a></li>
+                <li class="nav-item"><a class="nav-link" href="experiencia.html">Formação e Trajetória</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Materiais
+                  </a>
+                  <div class="dropdown-menu modern-dropdown" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="publicacoes.html">Publicações</a>
+                    <a class="dropdown-item" href="videos.html">Vídeos e Lives</a>
+                    <a class="dropdown-item" href="cursos.html">Cursos e Disciplinas</a>
+                    <a class="dropdown-item" href="outros.html">Outros materiais</a>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <section class="about_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="about-card">
+            <h2 style="color: var(--primary); font-weight: 700; margin-bottom: 25px;">Sobre mim</h2>
+            <p>Bacharel em <strong>Estatística</strong>, Mestre em <strong>Informática</strong> e Doutorando em <strong>Ciência da Computação</strong> pela Universidade Federal do Paraná (UFPR).</p>
+            
+            <p>Ex-professor substituto do Departamento de Estatística da UFPR e primeiro <strong>Coordenador de Estatística e Ciência de Dados</strong> da Pró-Reitoria de Planejamento e Dados da UFPR.</p>
+            
+            <p>Membro da Comissão de Combate à Evasão e Baixa Procura (CCEBP), da Comissão Própria de Avaliação (CPA), do Comitê de Governança Digital (CGD) e do Comitê de Privacidade e Segurança da Informação e Comunicação (CPSIC), todos da UFPR.</p>
+            
+            <p>Venho atuando em <strong>Estatística e Ciência de Dados</strong>, com foco em modelos de regressão, visualização de dados e análise estatística utilizando principalmente a linguagem <strong>R</strong>. Meus interesses incluem:</p>
+            
+            <ul>
+              <li>Estatística e Ciência de Dados.</li>
+              <li>Visualização de dados.</li>
+              <li>Modelos de regressão (GLM, GAMLSS, McGLM).</li>
+              <li>Aprendizado de máquina.</li>
+              <li>Ensino de Estatística e Ciência de Dados.</li>
+              <li>Pesquisa interdisciplinar e desenvolvimento em diversas áreas do conhecimento.</li>
+            </ul>
+            
+            <p>Apaixonado por transformar dados em informações para apoiar a tomada de decisão e compartilhar conhecimento.</p>
+            
+            <div class="quote-box">
+              "Números não contam a história toda, mas são fundamentais para subsidiar qualquer tomada de decisão. É o equilíbrio entre a evidência técnica e a sensibilidade humana que nos permitirá construir uma gestão cada vez mais justiça e eficiente."
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="img-box interativo mb-4 mt-md-0 mt-4">
+            <img src="images/sobre-mim/palestra2.jpeg" alt="Apresentação em Palestra" />
+          </div>
+          <div class="img-box interativo">
+            <img src="images/sobre-mim/evento-evasao.jpg" alt="Evento UFPR" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_section">
+    <div class="container text-center">
+      <p>© 2026 | <a href="https://lineu96.github.io/">Lineu Alberto Cavazani de Freitas</a></p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Cursos e Disciplinas | Lineu Alberto</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #004a99;
+      --accent: #00c6ff;
+      --soft-bg: #f4f9ff;
+    }
+
+    .hero_area {
+      background: linear-gradient(180deg, #ffffff 0%, var(--soft-bg) 100%);
+      padding-bottom: 30px;
+    }
+
+    .heading_container h2 {
+      color: var(--primary);
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+
+    .heading_container h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .content_card {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      margin-bottom: 40px;
+    }
+
+    /* Lista Reativa de Cursos */
+    .course_list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .course_list li {
+      margin-bottom: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #f0f0f0;
+      background: #fdfdfd;
+      transition: all 0.3s ease;
+      border-left: 4px solid transparent;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .course_list li:hover {
+      transform: translateX(10px);
+      border-left: 4px solid var(--accent);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      background: #fff;
+    }
+
+    .course_list a {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .course_list a:hover {
+      text-decoration: underline;
+    }
+
+    .footer_section {
+      background-color: var(--primary);
+      color: white;
+      padding: 30px 0;
+      margin-top: 40px;
+    }
+    .footer_section a { color: var(--accent); }
+  </style>
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>Lineu Alberto</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="s-1"> </span><span class="s-2"> </span><span class="s-3"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre mim</a></li>
+              <li class="nav-item"><a class="nav-link" href="experiencia.html">Formação e Trajetória</a></li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Materiais
+                </a>
+                <div class="dropdown-menu modern-dropdown" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="publicacoes.html">Publicações</a>
+                  <a class="dropdown-item" href="videos.html">Vídeos e Lives</a>
+                  <a class="dropdown-item" href="cursos.html">Cursos e Disciplinas</a>
+                  <a class="dropdown-item" href="outros.html">Outros materiais</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <section class="blog_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Cursos e disciplinas</h2>
+        <p>Aqui você encontrará meu histórico de cursos e disciplinas ministrados.</p>
+      </div>
+
+      <div class="content_card">
+        <ul class="course_list">
+          <li> <a href="https://lineu96.github.io/introest-compolitica/" target="_blank">Introdução à Estatística | Fundamentos de Análise Exploratória de Dados | Conceitos e Aplicações</a> - Escola de Verão Compolítica/INCT.DD 2026</li>
+          <li> <a href="https://github.com/lineu96/aula-ggplot2" target="_blank">Visualização de Dados e o ggplot2 - A Gramática por Trás dos Gráficos</a> - Participação na disciplina de Introdução à Visualização de Dados Aplicada para o curso de graduação em Estatística e Ciência de Dados da UFPR 2025</li>
+          <li> <a href="https://lineu96.github.io/aed-compolitica/" target="_blank">Fundamentos de Análise Exploratória de Dados | Conceitos e Aplicações</a> - Escola de Inverno Compolítica/INCT.DD 2025</li>
+          <li> <a href="https://lineu96.github.io/CE009CE24/" target="_blank">INTRODUÇÃO À ESTATÍSTICA</a> - Ciências Econômicas (P - CE009 - Noturno) - UFPR - 2º Semestre de 2024</li>
+          <li> <a href="https://lineu96.github.io/CE009CS24/" target="_blank">INTRODUÇÃO À ESTATÍSTICA</a> - Ciências Sociais (CS - CE009 - Matutino) - UFPR - 2º Semestre de 2024</li>
+          <li> <a href="https://lineu96.github.io/CE3012024/" target="_blank">ESTATÍSTICA BÁSICA</a> - Estatística e Ciência de Dados (EST - CE301 - Integral) - UFPR - 1º Semestre de 2024</li>
+          <li> <a href="http://www.leg.ufpr.br/~paulojus/transversal/" target="_blank">MÉTODOS ESTATÍSTICOS EM PESQUISA CIENTÍFICA</a> - PRPPG (7002 - MEPC - Remota) - UFPR - 1º Semestre de 2024</li>
+          <li> <a href="https://lineu96.github.io/CE009CS/" target="_blank">INTRODUÇÃO À ESTATÍSTICA</a> - Ciências Sociais (CS - CE009 - Matutino) - UFPR - 2º Semestre de 2023</li>
+          <li> <a href="https://lineu96.github.io/CE009ELTA/" target="_blank">INTRODUÇÃO À ESTATÍSTICA</a> - Engenharia Elétrica (ELTA - CE009 - Integral) - UFPR - 2º Semestre de 2023</li>
+          <li> <a href="https://lineu96.github.io/CE003-madeireira/" target="_blank">ESTATÍSTICA II</a> - Engenharia Industrial Madeireira (MD3p - CE003 - Integral) - UFPR - 1º Semestre de 2023</li>
+          <li> <a>ESTATÍSTICA BÁSICA</a> - Estatística e Ciência de Dados (EST - CE301 - Integral) - UFPR - 1º Semestre de 2023</li>
+          <li> <a href="http://www.leg.ufpr.br/~paulojus/transversal/" target="_blank">MÉTODOS ESTATÍSTICOS EM PESQUISA CIENTÍFICA</a> - PRPPG (7002 - MEPC - Remota) - UFPR - 1º Semestre de 2023</li>
+          <li> <a>INTRODUÇÃO À ESTATÍSTICA</a> - Agronomia (A - CE009 - Integral) - UFPR - 2º Semestre de 2022</li>
+          <li> <a>INTRODUÇÃO À ESTATÍSTICA</a> - Ciências Sociais (CS - CE009 - Matutino) - UFPR - 2º Semestre de 2022</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_section">
+    <div class="container text-center">
+      <p>© 2026 | <a href="https://lineu96.github.io/">Lineu Alberto Cavazani de Freitas</a></p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
