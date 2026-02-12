@@ -33,7 +33,7 @@ a, button {
 }
 
 /* ============================================================
-   HEADER & NAV (ALTO CONTRASTE)
+   HEADER & NAV (CORREÇÃO MOBILE INCLUÍDA)
    ============================================================ */
 .hero_area {
   min-height: auto !important;
@@ -55,6 +55,7 @@ a, button {
   color: #ffffff !important;
 }
 
+/* Estilo geral dos links */
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 7px 20px;
   margin: 5px 10px;
@@ -63,6 +64,7 @@ a, button {
   font-size: 14px;
   font-weight: 500;
   border-radius: 35px;
+  text-align: center;
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link, 
@@ -70,6 +72,32 @@ a, button {
   background-color: #ffffff;
   color: #1a3a5f !important;
   font-weight: 600;
+}
+
+/* BOTÃO HAMBÚRGUER (Aparece no Mobile) */
+.navbar-toggler {
+  outline: none !important;
+  border: none;
+}
+
+.navbar-toggler .s-1, 
+.navbar-toggler .s-2, 
+.navbar-toggler .s-3 {
+  background-color: #ffffff;
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px 0;
+}
+
+/* AJUSTE DO MENU EXPANSÍVEL NO MOBILE */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #1a3a5f; /* Garante fundo azul no menu aberto */
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
 }
 
 /* ============================================================
@@ -183,7 +211,6 @@ section, main, .info_section {
   border: none;
 }
 
-/* Força o nome e quaisquer links dentro do rodapé a serem brancos */
 .footer_section p, 
 .footer_section a, 
 .footer_section span {
@@ -193,7 +220,7 @@ section, main, .info_section {
 }
 
 .footer_section a:hover {
-  color: #00c6ff !important; /* Destaque azul claro ao passar o mouse no nome */
+  color: #00c6ff !important;
 }
 
 /* ============================================================
