@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Orientações | Lineu Alberto</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link href="css/style-v3.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #004a99;
+      --accent: #00c6ff;
+      --soft-bg: #f4f9ff;
+    }
+
+    .hero_area {
+      background: linear-gradient(180deg, #ffffff 0%, var(--soft-bg) 100%);
+      padding-bottom: 20px;
+    }
+
+    .heading_container h2 {
+      color: var(--primary);
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .heading_container h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .heading_container p {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* Container Principal */
+    .content_card_wrapper {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      margin-top: 20px;
+    }
+
+    /* Estilo do Card em Quadrinho */
+    .orientation-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .orientation-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+      border-color: var(--accent);
+    }
+
+    /* Badges Customizados */
+    .badge_type {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      align-self: flex-start;
+    }
+    .bg-emandamento { background-color: #e0f7fa; color: #00796b; }
+
+    .card-title-orientacao {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .card-info-orientacao {
+      color: #555;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      border-top: 1px dashed #eee;
+      padding-top: 12px;
+    }
+
+    .card-info-orientacao strong {
+      color: #333;
+    }
+
+    .footer_section {
+      background-color: var(--primary);
+      color: white;
+      padding: 30px 0;
+    }
+    .footer_section a { color: var(--accent); }
+  </style>
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>Lineu Alberto</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="s-1"> </span><span class="s-2"> </span><span class="s-3"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre mim</a></li>
+              <li class="nav-item"><a class="nav-link" href="experiencia.html">Formação e Trajetória</a></li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Materiais</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="publicacoes.html">Publicações</a>
+                  <a class="dropdown-item" href="orientacoes.html">Orientações</a>
+                  <a class="dropdown-item" href="videos.html">Vídeos e Lives</a>
+                  <a class="dropdown-item" href="cursos.html">Cursos e Disciplinas</a>
+                  <a class="dropdown-item" href="outros.html">Outros materiais</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <section class="layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>Orientações</h2>
+        <p>Acompanhe abaixo a listagem dos meus trabalhos orientados, englobando projetos de pesquisa, extensão e atividades acadêmicas em andamento.</p>
+      </div>
+
+      <div class="content_card_wrapper">
+        <div class="row">
+
+          <!-- Item 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Modelagem preditiva e avaliação longitudinal do desempenho acadêmico de estudantes de Enfermagem baseada no modelo MEC/INEP</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Christian Boller<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CE307 – Projetos de Análise de Dados (Disciplina obrigatória do curso de Estatística e Ciência de Dados da UFPR)<br>
+                <strong>Início:</strong> 27/06/2026 | <strong>Fim:</strong> 05/12/2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Procura no vestibular</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Matheus Lima, Macauly Bondick Costa<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CE307 – Projetos de Análise de Dados (Disciplina obrigatória do curso de Estatística e Ciência de Dados da UFPR)<br>
+                <strong>Início:</strong> 27/06/2026 | <strong>Fim:</strong> 05/12/2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Fatores Determinantes do Rendimento Acadêmico na UFPR: Uma Aplicação de Regressão para Dados Unitários</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Alan Vitor Lima Silva, Gligor Douglas Ortiz<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CE307 – Projetos de Análise de Dados (Disciplina obrigatória do curso de Estatística e Ciência de Dados da UFPR)<br>
+                <strong>Início:</strong> 27/06/2026 | <strong>Fim:</strong> 05/12/2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Observatório de Disciplinas Críticas: Explorando Desfechos e Trajetórias Acadêmicas na UFPR</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Rafael, Victória Keith, Igor, Erick<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas / Fernanda Buhrer Rizzato<br>
+                <strong>Vínculo:</strong> CE307 – Projetos de Análise de Dados (Disciplina obrigatória do curso de Estatística e Ciência de Dados da UFPR)<br>
+                <strong>Início:</strong> 27/06/2026 | <strong>Fim:</strong> 05/12/2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Desenvolvimento de Painel Interativo para Monitoramento Espaço-Temporal e Análise de Anomalias de Precipitação no Paraná</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Ananda, Giovane, Leonardo, Gabi<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CE307 / CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> 27/06/2026 | <strong>Fim:</strong> 05/12/2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Desenvolvimento de Plataforma Interativa para Análise Espaço-Temporal de Índices de Extremos de Precipitação no Paraná</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Vitor, Diego, Guilherme, Bianca<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CE307 / CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> 27/06/2026 | <strong>Fim:</strong> 05/12/2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Dinâmicas de Conclusão de Cursos na UFPR: Agrupamento Baseado em Morfologia de Séries Temporais</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Laura, Erick, Manuella<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas / Nivea da Silva Matuda Machado<br>
+                <strong>Vínculo:</strong> CE307 – Projetos de Análise de Dados (Disciplina obrigatória do curso de Estatística e Ciência de Dados da UFPR)<br>
+                <strong>Início:</strong> 27/06/2026 | <strong>Fim:</strong> 05/12/2026
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Item 10 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Modelagem preditiva da evasão universitária na UFPR sob recortes de raça e gênero</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Alexandre, Italo, Thiago, Gabriel<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas / Fernanda Buhrer Rizzato<br>
+                <strong>Vínculo:</strong> CE307 / CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> 27/06/2026 | <strong>Fim:</strong> 05/12/2026
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 11 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Inep Ações Afirmativas e Origem Escolar</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Gabriela S., Vinicius L., Emanuele<br>
+                <strong>Orientador(a):</strong> EDICLEIA / Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> --/--/---- | <strong>Fim:</strong> --/--/----
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 12 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Notificações SINAN</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Vinicius Lucio<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> --/--/---- | <strong>Fim:</strong> --/--/----
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 13 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Desenvolvimento de Plataforma Interativa para Análise Espaço-Temporal de Registros de Desastres Associados à Precipitação no Paraná
+</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Matheus Cabus, Annelise<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> --/--/---- | <strong>Fim:</strong> --/--/----
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 14 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Análise multivariada da trajetórica acadêmica: clusterização de cursos de graduação e o perfil do curso de Estatística e Ciência de Dados da UFPR</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Bruna, Jonas, Matheus V., Leo B., Gabriela J.<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> --/--/---- | <strong>Fim:</strong> --/--/----
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 15 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">PIPE: Plataforma de Indicadores e Performance de Equipe de voleibol</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Julia, Gaby Polli<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> --/--/---- | <strong>Fim:</strong> --/--/----
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 16
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">LESÕES VOLEIBOL</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Julia, Gaby Polli<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> --/--/---- | <strong>Fim:</strong> --/--/----
+              </div>
+            </div>
+          </div>
+ -->
+ 
+          <!-- Item 17 
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Identidade visual do Laboratório de Estat</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Milena, Luiz<br>
+                <strong>Orientador(a):</strong> EDICLEIA<br>
+                <strong>Vínculo:</strong> CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> --/--/---- | <strong>Fim:</strong> --/--/----
+              </div>
+            </div>
+          </div>
+
+-->
+
+          <!-- Item 19 
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">IPPUC</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Matheus SP, Vitor Fujimoto<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas / EDICLEIA<br>
+                <strong>Vínculo:</strong> CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> --/--/---- | <strong>Fim:</strong> --/--/----
+              </div>
+            </div>
+          </div>
+-->
+
+          <!-- Item 20 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="orientation-card">
+              <div>
+                <span class="badge_type bg-emandamento">EM ANDAMENTO</span>
+                <div class="card-title-orientacao">Disciplinas com alta taxa de reprovação (Curso de Estatística)</div>
+              </div>
+              <div class="card-info-orientacao">
+                <strong>Grupo:</strong> Leo Bhering<br>
+                <strong>Orientador(a):</strong> Lineu Alberto Cavazani de Freitas<br>
+                <strong>Vínculo:</strong> CECD-Lab (Projeto de extensão sob minha coordenação)<br>
+                <strong>Início:</strong> --/--/---- | <strong>Fim:</strong> --/--/----
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_section">
+    <div class="container text-center">
+      <p>© 2026 | <a href="https://lineu96.github.io/">Lineu Alberto Cavazani de Freitas</a></p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
